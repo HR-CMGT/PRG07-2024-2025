@@ -60,6 +60,9 @@ Daarna kan je de navigator implementeren. Volg daarvoor de stappen uit ['Hello R
 Native Stack Navigator'. Je kunt bij de code voorbeelden steeds kiezen tussen **static**, vergelijkbaar met routing bij
 PRG6, of **dynamic**, waarbij de configuratie in de `JSX` plaatsvindt.
 
+> We raden sterk aan om de optie **dynamic** te kiezen. Hiermee kun je namelijk props meegeven aan je componenten, iets
+> wat je waarschijnlijk nodig zult hebben.
+
 NB. De handleiding is voor een `Native Stack Navigator`, dus als je voor een ander type navigator gekozen hebt moet je
 dat niet vergeten zelf aan te passen.
 
