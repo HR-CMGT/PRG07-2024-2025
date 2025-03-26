@@ -45,7 +45,7 @@ modules in de documentatie gebruikt worden, vind je hier een overzicht van de es
 
 ```
 npm install @react-navigation/native
-npx expo install react-native-screensreact-native-safe-area-context
+npx expo install react-native-screens react-native-safe-area-context
 ```
 
 **type navigator** (kies één van onderstaande navigators)
