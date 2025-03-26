@@ -108,7 +108,7 @@ navigeren.
 
 - Haal de [notes](https://notes.basboot.nl/notes) of [chess spots](https://prg06-node-express.antwan.eu/spots/) op van
   de webservice.
-  - Laat tijdens het ophalen van de data een loader zien met `ActivityIndicator` (Tip: de notes webservice ondersteunt
+  - Laat tijdens het ophalen van de data een loader zien met `ActivityIndicator` (Tip: beide webservices ondersteunen
     een header `x-delay-ms` waarmee je de response een aantal milliseconden kunt vertragen)
 - Toon op **scherm 1** de gegevens in een `FlatList`.
 - Wanneer de gebruiker op een item drukt moet **scherm 2** geopend worden.
