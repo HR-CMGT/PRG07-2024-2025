@@ -2,6 +2,11 @@
 
 ## Les 1
 
+- [Installatie](#installatie)
+  - [Les 1](#les-1)
+  - [Les 2](#les-2)
+  - [Les 3](#les-3)
+
 Check of node en npm de juiste versie hebben:
 
 `node -v` versie 20 of 22
@@ -30,3 +35,33 @@ in de terminal van je project het volgende uit te voeren:
 **Let op!** Je telefoon moet verbonden zijn met hetzelfde netwerk als je computer.
 
 [Expo Go App en simulator opties](https://docs.expo.dev/get-started/set-up-your-environment/)
+
+## Les 3
+
+Omdat de documentatie van de installatie van een navigator verdeeld is over meerdere pagina's, en ook diverse extra
+modules in de documentatie gebruikt worden, vind je hier een overzicht van de essentiële stappen:
+
+**basis react navigation**
+
+```
+npm install @react-navigation/native
+npx expo install react-native-screensreact-native-safe-area-context
+```
+
+**type navigator** (kies één van onderstaande navigators)
+
+- `npm install @react-navigation/stack`, of
+- `npm install @react-navigation/native-stack`, of
+- `npm install @react-navigation/bottom-tabs`
+
+**implementatie**
+
+Daarna kan je de navigator implementeren. Volg daarvoor de stappen uit 'Hello React Navigation', vanaf 'Creating a
+Native Stack Navigator'. Je kunt bij de code voorbeelden steeds kiezen tussen **static**, vergelijkbaar met routing bij
+PRG6, of **dynamic**, waarbij de configuratie in de `JSX` plaatsvindt.
+
+NB. De handleiding us voor een `Native Stack Navigator`, dus als je voor een ander type navigator gekozen hebt moet je
+dat niet vergeten zelf aan te passen.
+
+https://reactnavigation.org/docs/hello-react-navigation#creating-a-native-stack-navigator (static)<br>
+https://reactnavigation.org/docs/hello-react-navigation/?config=dynamic#creating-a-native-stack-navigator<br>

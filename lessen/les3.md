@@ -2,7 +2,7 @@
 
 - [Les 3](#les-3)
   - [Navigatie in React Native](#navigatie-in-react-native)
-    - [Stack Navigator](#stack-navigator)
+    - [Stack Navigator en Native Stack Navigator](#stack-navigator-en-native-stack-navigator)
     - [Bottom Tabs Navigator](#bottom-tabs-navigator)
   - [Lijsten in React Native](#lijsten-in-react-native)
     - [List Views](#list-views)
@@ -20,15 +20,16 @@ gebruik je schermen. Elk scherm heeft een naam, en je kunt daartussen navigeren.
 Bij navigeren kun je ook **data meegeven**. Bijvoorbeeld: als je een lijst met producten hebt, kun je bij een klik op
 een product de details doorsturen naar het volgende scherm.
 
-### Stack Navigator
+### Stack Navigator en Native Stack Navigator
 
-Een `Stack Navigator` werkt als een stapel schermen, waarbij alleen het bovenste scherm zichtbaar is voor de gebruiker.
-Wanneer je naar een nieuw scherm gaat, wordt dit **bovenop de stapel** geplaatst. Het vorige scherm blijft eronder staan
-en verdwijnt niet uit het geheugen. Wanneer je op de terug-knop drukt, dan wordt het bovenste scherm **weggehaald** en
-zie je dus weer het vorige scherm.
+Een `Stack Navigator` (`Native Stack Navigator`) werkt als een stapel schermen, waarbij alleen het bovenste scherm
+zichtbaar is voor de gebruiker. Wanneer je naar een nieuw scherm gaat, wordt dit **bovenop de stapel** geplaatst. Het
+vorige scherm blijft eronder staan en verdwijnt niet uit het geheugen. Wanneer je op de terug-knop drukt, dan wordt het
+bovenste scherm **weggehaald** en zie je dus weer het vorige scherm.
 
 Dit is vergelijkbaar met hoe een browsergeschiedenis werkt: als je een nieuwe pagina opent, kun je met de terug-knop
-weer naar de vorige pagina. <br> https://reactnavigation.org/docs/stack-navigator
+weer naar de vorige pagina. <br> https://reactnavigation.org/docs/stack-navigator<br>
+https://reactnavigation.org/docs/native-stack-navigator
 
 ### Bottom Tabs Navigator
 
@@ -45,14 +46,14 @@ meer content wilt tonen dan op het scherm past, moet je zelf zorgen voor scroll-
 `ScrollView`.
 
 Een `ScrollView` maakt scrollen mogelijk en werkt prima voor bijvoorbeeld tekstpagina’s. Maar als je een lijst met een
-onbekend aantal items wilt tonen, is een `ScrollView` minder geschikt. Dit komt omdat een `ScrollView` **alle** items in
-één keer laadt, zelfs als ze niet zichtbaar zijn. Bij lange lijsten kan dit veel geheugen verbruiken en je app trager
-maken. De oplossing hiervoor is om gebruikt maken van een `List View`.
+onbekend aantal items wilt tonen, is een `ScrollView` minder geschikt. Dit komt omdat een `ScrollView` **alle** items
+in één keer laadt, zelfs als ze niet zichtbaar zijn. Bij lange lijsten kan dit veel geheugen verbruiken en je app
+trager maken. De oplossing hiervoor is om gebruikt maken van een `List View`.
 
 ### List Views
 
-Een `List View` is een geoptimaliseerde manier om lijsten weer te geven. In tegenstelling tot een `ScrollView` laadt een
-List View alleen de items in die op dat moment op het scherm zichtbaar zijn. Dit maakt het efficiënter en voorkomt
+Een `List View` is een geoptimaliseerde manier om lijsten weer te geven. In tegenstelling tot een `ScrollView` laadt
+een List View alleen de items in die op dat moment op het scherm zichtbaar zijn. Dit maakt het efficiënter en voorkomt
 onnodig geheugenverbruik.
 
 React Native biedt twee soorten List Views:
@@ -66,8 +67,11 @@ https://reactnative.dev/docs/scrollview<br> https://reactnative.dev/docs/using-a
 
 ## Opdracht 3.1 - Navigeren tussen twee schermen
 
-[Installeer](../guides/installatie.md#les-2) een nieuwe Expo app. <br> Bouw een React Native-app met twee schermen en
-gebruik een **Stack Navigator** om ertussen te navigeren.
+[Installeer](../guides/installatie.md#les-2) een nieuwe Expo app. <br>
+
+[Installeer](../guides/installatie.md#les-3) een **Stack Navigator**.<br>
+
+Bouw een React Native-app met twee schermen en gebruik de **Stack Navigator** om ertussen te navigeren. []
 
 **Functionaliteiten**
 
@@ -81,8 +85,8 @@ gebruik een **Stack Navigator** om ertussen te navigeren.
 ## Opdracht 3.2 - Navigeren vanuit een statische lijst
 
 [Installeer](../guides/installatie.md#les-2) een nieuwe Expo app. <br> Bouw een React Native-app met twee schermen en
-een **statische lijst** met gegevens op het eerste scherm. Gebruik een **Stack Navigator** om tussen de twee schermen te
-navigeren.
+een **statische lijst** met gegevens op het eerste scherm. Gebruik een **Stack Navigator** om tussen de twee schermen
+te navigeren.
 
 **Functionaliteiten**
 
@@ -104,7 +108,8 @@ navigeren.
 
 - Haal de [notes](https://notes.basboot.nl/notes) of [chess spots](https://prg06-node-express.antwan.eu/spots/) op van
   de webservice.
-  - Laat tijdens het ophalen van de data een loader zien met `ActivityIndicator` (Tip: de notes webservice ondersteunt een header `x-delay-ms` waarmee je de response een aantal milliseconden kunt vertragen)
+  - Laat tijdens het ophalen van de data een loader zien met `ActivityIndicator` (Tip: de notes webservice ondersteunt
+    een header `x-delay-ms` waarmee je de response een aantal milliseconden kunt vertragen)
 - Toon op **scherm 1** de gegevens in een `FlatList`.
 - Wanneer de gebruiker op een item drukt moet **scherm 2** geopend worden.
 - Haal op **scherm 2** de details op van de geselecteerde note of chess spot en toon deze op het scherm.
