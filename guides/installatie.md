@@ -41,7 +41,7 @@ in de terminal van je project het volgende uit te voeren:
 Omdat de documentatie van de installatie van een navigator verdeeld is over meerdere pagina's, en ook diverse extra
 modules in de documentatie gebruikt worden, vind je hier een overzicht van de essentiële stappen:
 
-**basis react navigation**
+**basis navigation** (altijd nodig)
 
 ```
 npm install @react-navigation/native
@@ -56,12 +56,12 @@ npx expo install react-native-screensreact-native-safe-area-context
 
 **implementatie**
 
-Daarna kan je de navigator implementeren. Volg daarvoor de stappen uit 'Hello React Navigation', vanaf 'Creating a
+Daarna kan je de navigator implementeren. Volg daarvoor de stappen uit ['Hello React Navigation'](https://reactnavigation.org/docs/hello-react-navigation#creating-a-native-stack-navigator), vanaf 'Creating a
 Native Stack Navigator'. Je kunt bij de code voorbeelden steeds kiezen tussen **static**, vergelijkbaar met routing bij
 PRG6, of **dynamic**, waarbij de configuratie in de `JSX` plaatsvindt.
 
-NB. De handleiding us voor een `Native Stack Navigator`, dus als je voor een ander type navigator gekozen hebt moet je
+NB. De handleiding is voor een `Native Stack Navigator`, dus als je voor een ander type navigator gekozen hebt moet je
 dat niet vergeten zelf aan te passen.
 
 https://reactnavigation.org/docs/hello-react-navigation#creating-a-native-stack-navigator (static)<br>
-https://reactnavigation.org/docs/hello-react-navigation/?config=dynamic#creating-a-native-stack-navigator<br>
+https://reactnavigation.org/docs/hello-react-navigation/?config=dynamic#creating-a-native-stack-navigator (dynamic)<br>
