@@ -50,7 +50,8 @@ npx expo install react-native-screens react-native-safe-area-context
 
 **type navigator** (kies één van onderstaande navigators)
 
-- `npm install @react-navigation/native-stack`, of
+- `npm install @react-navigation/native-stack` (standaard vanuit documentatie), of
+- `npm install @react-navigation/stack` (wanneer je dingen wilt die niet native kunnen), of
 - `npm install @react-navigation/bottom-tabs` (voor je eindproduct interessant)
 
 **implementatie**

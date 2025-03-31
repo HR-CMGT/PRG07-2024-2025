@@ -74,9 +74,9 @@ Nuttige links: [AsyncStorage](https://docs.expo.dev/versions/latest/sdk/async-st
 
 ## Opdracht 4.2 - Settings & AsyncStorage
 
-Bouw een React Native-app met **twee schermen** en gebruik de **Native Stack Navigator**. Het tweede scherm is een
-**settingsscherm** waarin de gebruiker een naam en een leeftijd kan invoeren. Deze gegevens moeten vervolgens worden
-weergegeven op het eerste scherm.
+Bouw een React Native-app met **twee schermen** en gebruik de **Standaard Stack Navigator** (`npm install @react-navigation/stack`).
+Het tweede scherm is een **settingsscherm** waarin de gebruiker een naam en een leeftijd kan invoeren. Deze gegevens moeten
+vervolgens worden weergegeven op het eerste scherm.
 
 **Deel 1**
 
