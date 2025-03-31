@@ -80,8 +80,8 @@ weergegeven op het eerste scherm.
 
 **Deel 1**
 
-- **Scherm 1** toont in eerste instantie de melding `Nog niet alle gegevens zijn bekend.` wanneer nog niet alle settings
-  zijn opgeslagen in de **AsyncStorage**.
+- **Scherm 1** toont in eerste instantie de melding `Nog niet alle gegevens zijn bekend.` wanneer er nog geen settings
+  bekend zijn in dat scherm.
 - Voeg in de **header** aan de rechterkant een knop toe met de tekst `Settings`, die **scherm 2** opent.
 - **Scherm 2** bevat twee **invoervelden** om een naam en een leeftijd in te voeren. Zorg ervoor dat het invoerveld voor
   de leeftijd een numeriek veld is, zodat er alleen cijfers ingevoerd kunnen worden. Tot slot bevat dit scherm de knop
